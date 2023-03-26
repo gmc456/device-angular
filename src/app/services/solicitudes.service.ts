@@ -10,15 +10,15 @@ export class SolicitudesService {
   constructor(private http: HttpClient) {}
 
   findAll(): Observable<any> {
-    return this.http.get(`${environment.urlEspacios}/solicitudes`);
+    return this.http.get(`${environment.urlDevices}`);
   }
 
   findOne(id: any): Observable<any> {
-    return this.http.get(`${environment.urlEspacios}/solicitudes/${id}`);
+    return this.http.get(`${environment.urlDevices}/${id}`);
   }
 
   save(data: any): Observable<any> {
-    return this.http.post(`${environment.urlEspacios}/solicitudes`, data);
+    return this.http.post(`${environment.urlDevices}`, data);
   }
 
   delete(id: any): Observable<any> {

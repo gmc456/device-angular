@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   urlPersonas: 'http://localhost:3000/personas',
   urlEspacios: 'http://localhost:3000',
+  urlDevices: 'http://localhost:3000/devices',
 };
 
 /*
